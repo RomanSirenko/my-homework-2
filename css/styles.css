@@ -1,0 +1,37 @@
+/* main color #000000 */
+/* secondary color  rgba(0,0,0,0) */
+/* white #FFFFFF */
+/* accent color #18A0FB */
+/* secondary background color #F5F5F5 */
+body {
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.8);
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  color: #000000;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+a:hover,
+a:focus {
+  color: #18a0fb;
+}
+
+.logo {
+  color: black;
+  font-weight: bold;
+}
+.logo-web {
+  color: #18a0fb;
+}
