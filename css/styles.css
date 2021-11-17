@@ -79,7 +79,7 @@ h3 {
 
 /* nav-button CURRENT  */
 
-.nav-button .current {
+.nav-button.current {
   color: var(--accent-color);
 }
 
