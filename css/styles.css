@@ -21,24 +21,31 @@ ul {
 }
 a {
   text-decoration: none;
-  color: var(--title-text-color);
+  color: inherit;
 }
 
 /*    global styles    */
 
 body {
-  background-color: var(--pimary-background-color);
   color: var(--primary-text-color);
+  background-color: var(--pimary-background-color);
   font-family: var(--basic-font);
-}
-h3 {
-  color: var(--title-text-color);
 }
 
 /*   heading styles   */
 
+h3 {
+  color: var(--title-text-color);
+}
+
 .section-title {
   color: var(--title-text-color);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 
 /*      HEADER      */
@@ -50,7 +57,7 @@ h3 {
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2;
   /* identical to box height */
 
   letter-spacing: 0.03em;
@@ -62,8 +69,8 @@ h3 {
 }
 
 /* nav-bar */
-.nav {
-  font-family: Roboto;
+
+.nav-button {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -85,7 +92,6 @@ h3 {
 
 /* contact-bar*/
 .contact-button {
-  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -102,8 +108,7 @@ h3 {
 
 /*   hero title   */
 .hero-title {
-  background-color: #2f303a;
-  font-family: Roboto;
+  background-color: var(--title-text-color);
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -118,18 +123,48 @@ h3 {
 }
 
 /*    hero button   */
-.button {
-  font-size: 24px;
-  padding: 12px 24px;
-  border-color: var(--accent-color);
+
+.button.primary {
+  /* Заказать услугу */
+
+  width: 136px;
+  height: 30px;
+  left: 732px;
+  top: 440px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 187% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--background-color);
+
+  /* bg */
+  height: 50px;
+  width: 200px;
+  left: 700px;
+  top: 430px;
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+.button-text {
+  position: absolute;
+  left: 28px;
 }
 .button.primary:hover,
 .button.primary:focus {
-  color: rgb(199, 199, 199);
+  color: var(--primary-text-color);
 }
 .button.secondary:hover,
 .button.secondary:focus {
-  color: rgb(199, 199, 199);
+  color: var(--primary-text-color);
 }
 
 .button.primary {
@@ -155,16 +190,83 @@ h3 {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.p-title {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-transform: uppercase;
+}
 
 /*   WHAT WE DO    */
 
 /*    TEAM    */
+.employee-name {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
 .position {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  text-align: center;
+
   color: var(--primary-text-color);
 }
 
-/*   FOOTER     */
+/*        P    O    R    T    F    O     L     I     O    */
 
+.category-button {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  /* Rectangle 10 */
+
+  width: 145px;
+  height: 38px;
+  left: 712px;
+  top: 174px;
+
+  background: var(--background-secondary-color);
+
+  color: var(--title-text-color);
+  background-color: var(--background-secondary-color);
+
+  cursor: pointer;
+}
+
+.category-button:hover,
+.category-button:focus {
+  color: var(--background-color);
+  background-color: var(--accent-color);
+}
+
+/*   FOOTER     */
+.logo.footer-logo {
+  color: var(--background-color);
+  background-color: var(--title-text-color);
+}
 .address {
-  font: ;
+  color: var(--background-color);
+  background-color: var(--title-text-color);
+  font: var(--basic-font);
+  font-style: normal;
+}
+.contact {
+  color: var(--primary-text-color);
+  background-color: var(--title-text-color);
+  font: var(--basic-font);
+  font-style: normal;
 }
