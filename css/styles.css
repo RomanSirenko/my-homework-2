@@ -41,7 +41,6 @@ h3 {
 .section-title {
   color: var(--title-text-color);
   font-size: 36px;
-  font-style: normal;
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -54,7 +53,6 @@ h3 {
 
 .logo {
   font-family: Raleway;
-  font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
@@ -68,17 +66,15 @@ h3 {
   color: var(--accent-color);
 }
 
-/* nav-bar */
+/*            NAV-BAR           */
 
 .nav-button {
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
-
 .nav-button:hover,
 .nav-button:focus {
   color: var(--accent-color);
@@ -92,10 +88,9 @@ h3 {
 
 /* contact-bar*/
 .contact-button {
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
@@ -109,17 +104,15 @@ h3 {
 /*   hero title   */
 .hero-title {
   background-color: var(--title-text-color);
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
-  /* or 136% */
+  line-height: 1.36;
 
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--background-color);
 }
 
 /*    hero button   */
@@ -132,18 +125,16 @@ h3 {
   left: 732px;
   top: 440px;
 
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 30px;
-  /* identical to box height, or 187% */
+  line-height: 1.87;
 
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
 
   color: var(--background-color);
+  background-color: var(--accent-color);
 
   /* bg */
   height: 50px;
@@ -154,29 +145,14 @@ h3 {
 
   cursor: pointer;
 }
-.button-text {
-  position: absolute;
-  left: 28px;
-}
 .button.primary:hover,
 .button.primary:focus {
   color: var(--primary-text-color);
 }
-.button.secondary:hover,
-.button.secondary:focus {
-  color: var(--primary-text-color);
-}
-
-.button.primary {
-  color: var(--background-color);
-  background-color: var(--accent-color);
-}
-.button.secondary {
-  color: var(--accent-color);
-  background-color: var(--background-color);
-}
 
 /*   ADVANTAGES  */
+
+/* hidden title*/
 .advantages-title {
   position: absolute;
   width: 1px;
@@ -190,11 +166,12 @@ h3 {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/*  paragraph-titles  */
 .p-title {
   font-size: 14px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-align: left;
   text-transform: uppercase;
@@ -202,20 +179,25 @@ h3 {
 
 /*   WHAT WE DO    */
 
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
 /*    TEAM    */
 .employee-name {
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 19px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
 }
 .position {
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 19px;
+  line-height: 1.1;
   letter-spacing: 0.03em;
   text-align: center;
 
@@ -224,34 +206,35 @@ h3 {
 
 /*        P    O    R    T    F    O     L     I     O    */
 
+/* radio-buttons */
+
 .category-button {
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 1.6;
   letter-spacing: 0.03em;
   text-align: center;
-
-  /* Rectangle 10 */
 
   width: 145px;
   height: 38px;
   left: 712px;
   top: 174px;
 
-  background: var(--background-secondary-color);
-
   color: var(--title-text-color);
-  background-color: var(--background-secondary-color);
+
+  background: var(--background-secondary-color);
+  border-radius: 4px;
 
   cursor: pointer;
 }
-
 .category-button:hover,
 .category-button:focus {
   color: var(--background-color);
   background-color: var(--accent-color);
 }
+
+/*   E N D      O F       P O R T F O L I O     */
 
 /*   FOOTER     */
 .logo.footer-logo {
@@ -262,11 +245,9 @@ h3 {
   color: var(--background-color);
   background-color: var(--title-text-color);
   font: var(--basic-font);
-  font-style: normal;
 }
 .contact {
   color: var(--primary-text-color);
   background-color: var(--title-text-color);
   font: var(--basic-font);
-  font-style: normal;
 }
